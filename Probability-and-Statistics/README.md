@@ -10,6 +10,10 @@
     - [1.5. Beta distribution](#15-beta-distribution)
     - [1.6. Gamma distribution](#16-gamma-distribution)
     - [1.7. Transformation of Random Variables](#17-transformation-of-random-variables)
+- [2. Multivariate Models](#2-multivariate-models)
+    - [2.1. Joint distributions for multiple random variables](#21-joint-distributions-for-multiple-random-variables)
+    - [2.2. The multivariate Gaussian (normal) distribution](#22-the-multivariate-gaussian-normal-distribution)
+    - [2.3. Linear Gaussian systems](#23-linear-gaussian-systems)
 
 - [Reference](#reference)
 
@@ -49,6 +53,26 @@
 
 ### 1.7. Transformation of Random Variables 
 ![](./Transformation%20of%20RVs.png)
+
+## 2. Multivariate Models
+
+### 2.1. Joint distributions for multiple random variables 
+![](./Joint%20Distribution.png)
+
+### 2.2. The multivariate Gaussian (normal) distribution
+
+![](./MVN.png)
+
+- Can be used for missing value imputation.
+
+### 2.3. Linear Gaussian systems
+
+![](./Linear%20Gaussian.png)
+
+### 2.4. Mixture of Models
+
+- Gaussian Mixture Model (GMM): If we let the number of mixture
+components grow sufficiently large, a GMM can approximate any smooth distribution
 
 ## Reference
 
