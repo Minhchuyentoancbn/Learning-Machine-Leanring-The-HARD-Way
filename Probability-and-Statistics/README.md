@@ -20,6 +20,8 @@
     - [3.3. Efficient Estimators](#33-efficient-estimators)
     - [3.4. Properties of Maximum Likelihood Estimators for Large Samples](#34-properties-of-maximum-likelihood-estimators-for-large-samples)
     - [3.5. Fisher Information for Multiple Parameters](#35-fisher-information-for-multiple-parameters)
+- [4. Hypothesis Testing](#4-hypothesis-testing)
+    - [4.1. Tests of Homogeneity](#41-tests-of-homogeneity)
 
 - [Reference](#reference)
 
@@ -136,6 +138,26 @@ components grow sufficiently large, a GMM can approximate any smooth distributio
 
 ![](./Fisher%20Information%20for%20a%20vector%20parameter.png)
 
+
+## 4. Hypothesis Testing
+
+### 4.1. Tests of Homogeneity
+
+- Consider a problem in which random samples are taken from $R$ different populations, and each observation in each sample can be classified as one
+of $C$ different types. Thus, the data obtained from the R samples can be represented in an $R \times C$ table.
+- For $i = 1,...,R,$ and $j = 1,...,C,$ we shall let $p_{ij}$ denote the
+probability that an observation chosen at random from the $i$ th population will be of type $j$.
+
+![](./Homogeneity%20Hypothesis.png)
+![](./Homogeneity%20Hypothesis%202.png)
+
+- __The Chi-Square Test of Homogeneity:__
+
+![](./Chi-Square%20test%20of%20Homogeneity.png)
+
+- Statistic Q will have approximately the Chi-square distribution with $(R − 1)(C − 1)$ degrees of freedom
+
+- __Note__: The Chi-square test of homogeneity is a special case of the Chi-square test of independence: First, consider the situation in which one sample is drawn and the random variables corresponding to rows and columns are measured. Independence of the row and column variables is equivalent to the conditional distribution of the column variable given a value of the row variable being the same for every value of the row variable. Hence, the test of independence tests that the conditional distributions of the column variable are the same for each value of the row variable. Next, think of the row variable as defining subpopulations. The conditional distributions of the column variable given each value of the row variable are the distributions of the column variable within each subpopulation. The test of homogeneity tests that the distributions within the subpopulations are the same if the samples had been drawn separately from each subpopulation rather than drawn at random from the entire population.
 
 ## Reference
 
