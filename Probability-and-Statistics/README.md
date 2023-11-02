@@ -14,6 +14,12 @@
     - [2.1. Joint distributions for multiple random variables](#21-joint-distributions-for-multiple-random-variables)
     - [2.2. The multivariate Gaussian (normal) distribution](#22-the-multivariate-gaussian-normal-distribution)
     - [2.3. Linear Gaussian systems](#23-linear-gaussian-systems)
+- [3. Fisher Information](#3-fisher-information)
+    - [3.1. Definition and Properties](#31-definition-and-properties)
+    - [3.2. The Information Inequality](#32-the-information-inequality)
+    - [3.3. Efficient Estimators](#33-efficient-estimators)
+    - [3.4. Properties of Maximum Likelihood Estimators for Large Samples](#34-properties-of-maximum-likelihood-estimators-for-large-samples)
+    - [3.5. Fisher Information for Multiple Parameters](#35-fisher-information-for-multiple-parameters)
 
 - [Reference](#reference)
 
@@ -74,6 +80,65 @@
 - Gaussian Mixture Model (GMM): If we let the number of mixture
 components grow sufficiently large, a GMM can approximate any smooth distribution
 
+## 3. Fisher Information
+
+![](./Fisher%20and%20Hessian.png)
+
+
+### 3.1. Definition and Properties
+
+- Definition:
+
+![](./Fisher%20Information%20Definition.png)
+
+- Properties:
+
+![](./Fisher%20Information%20Property%201.png)
+
+- __The Fisher Information in a Random Sample:__ When we have a random sample from a distribution, the Fisher information is defined in an analogous manner.
+
+![](./Fisher%20of%20Random%20Sample.png)
+
+### 3.2. The Information Inequality
+
+- Cramer-Rao (Information) Inequality
+
+![](./Crammer%20Rao%20Inequality.png)
+
+- Cramer-Rao Lower Bound on the Variance of an Unbiased Estimator
+
+![](./Crammer%20Rao%20Inequality%20Unbiased.png)
+
+
+### 3.3. Efficient Estimators
+
+- Definition:
+
+![](./Efficient%20Estimator%20Definition.png)
+
+- In other words, if $T$ is an efficient estimator of $m(\theta)$, then among all unbiased estimators of $m(\theta)$, $T$ will have the smallest variance for every possible value of $\theta$.
+
+### 3.4. Properties of Maximum Likelihood Estimators for Large Samples
+
+- Asymtotic Distribution of an Efficient Estimator:
+
+![](./MLE%20for%20large%20samples.png)
+
+- Asymptotic Distribution of M.L.E
+
+![](./Asymtotic%20Distribution%20of%20MLE.png)
+
+- It is said that $\hat\theta_n$ is an asymptotically efficient estimator.
+
+### 3.5. Fisher Information for Multiple Parameters
+
+- Fisher Information for a Vector Parameter:
+
+![](./Fisher%20Information%20for%20a%20vector%20parameter.png)
+
+
 ## Reference
 
 - [1] Kevin P. Murphy. 2022. Probabilistic Machine Learning: An introduction. MIT Press.
+- [2] DeGroot, Morris H. and Schervish, Mark J. 2002. Probability and Statistics. 3rd ed. Addison Wesley.
+
