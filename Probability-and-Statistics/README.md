@@ -20,8 +20,10 @@
     - [3.3. Efficient Estimators](#33-efficient-estimators)
     - [3.4. Properties of Maximum Likelihood Estimators for Large Samples](#34-properties-of-maximum-likelihood-estimators-for-large-samples)
     - [3.5. Fisher Information for Multiple Parameters](#35-fisher-information-for-multiple-parameters)
-- [4. Hypothesis Testing](#4-hypothesis-testing)
-    - [4.1. Tests of Homogeneity](#41-tests-of-homogeneity)
+- [4. Categorical Data and Nonparametric Methods](#4-categorical-data-and-nonparametric-methods)
+    - [4.1. Tests of Goodness of Fit](#41-tests-of-goodness-of-fit)
+    - [4.2. Tests of Homogeneity](#41-tests-of-homogeneity)
+    - [4.3. Robust Estimation](#43-robust-estimation)
 
 - [Reference](#reference)
 
@@ -139,9 +141,36 @@ components grow sufficiently large, a GMM can approximate any smooth distributio
 ![](./Fisher%20Information%20for%20a%20vector%20parameter.png)
 
 
-## 4. Hypothesis Testing
+## 4. Categorical Data and Nonparametric Methods
 
-### 4.1. Tests of Homogeneity
+### 4.1. Tests of Goodness of Fit
+
+- __The Chi-Squared Test of Goodness of Fit:__
+
+![](./Chi-Squared%20Test%20Assumptions%20.png)
+
+- For $i = 1,...,k,$ we shall let $N_i$ denote the number of observations in the random sample that are of type $i$.
+
+- Chi-Squared Statistic:
+
+![](./Chi-Squared%20Statistic.png)
+
+- __Testing Hypotheses about a Continuous Distribution:__
+
+![](./Chi-Squared%20Test%20Continuous%20Variables.png)
+
+- __Composite Null Hypotheses:__
+
+![](./Goodness%20of%20Fit%20Composite%20Hypotheses.png)
+
+- __The Chi-Squared Test for Composite Null Hypotheses:__
+
+![](./Chi-Squared%20Test%20Composite%20Hypotheses.png)
+
+- To determine the number of degrees of freedom, we must subtract $s$ from the number $k − 1$ because we are now estimating the $s$ parameters $\theta_1, \theta_2, ..., \theta_s$.
+
+
+### 4.2. Tests of Homogeneity
 
 - Consider a problem in which random samples are taken from $R$ different populations, and each observation in each sample can be classified as one
 of $C$ different types. Thus, the data obtained from the R samples can be represented in an $R \times C$ table.
@@ -151,13 +180,34 @@ probability that an observation chosen at random from the $i$ th population will
 ![](./Homogeneity%20Hypothesis.png)
 ![](./Homogeneity%20Hypothesis%202.png)
 
-- __The Chi-Square Test of Homogeneity:__
+- __The Chi-Squared Test of Homogeneity:__
 
 ![](./Chi-Square%20test%20of%20Homogeneity.png)
 
-- Statistic Q will have approximately the Chi-square distribution with $(R − 1)(C − 1)$ degrees of freedom
+- Statistic Q will have approximately the Chi-squared distribution with $(R − 1)(C − 1)$ degrees of freedom
 
-- __Note__: The Chi-square test of homogeneity is a special case of the Chi-square test of independence: First, consider the situation in which one sample is drawn and the random variables corresponding to rows and columns are measured. Independence of the row and column variables is equivalent to the conditional distribution of the column variable given a value of the row variable being the same for every value of the row variable. Hence, the test of independence tests that the conditional distributions of the column variable are the same for each value of the row variable. Next, think of the row variable as defining subpopulations. The conditional distributions of the column variable given each value of the row variable are the distributions of the column variable within each subpopulation. The test of homogeneity tests that the distributions within the subpopulations are the same if the samples had been drawn separately from each subpopulation rather than drawn at random from the entire population.
+- __Note__: The Chi-squared test of homogeneity is a special case of the Chi-squared test of independence: First, consider the situation in which one sample is drawn and the random variables corresponding to rows and columns are measured. Independence of the row and column variables is equivalent to the conditional distribution of the column variable given a value of the row variable being the same for every value of the row variable. Hence, the test of independence tests that the conditional distributions of the column variable are the same for each value of the row variable. Next, think of the row variable as defining subpopulations. The conditional distributions of the column variable given each value of the row variable are the distributions of the column variable within each subpopulation. The test of homogeneity tests that the distributions within the subpopulations are the same if the samples had been drawn separately from each subpopulation rather than drawn at random from the entire population.
+
+
+### 4.3. Robust Estimation
+
+-  An estimator that performs well for several different types of distributions, even though it may not be the best available estimator for any particular type of distribution, is called a robust estimator.
+
+- __Contaminated Normal Distributions:__
+
+![](./Contaminated%20Normal%20Distribution.png)
+
+- __Trimmed Means:__
+
+![](./Trimmed%20Mean.png)
+
+- __Robust Estimation of Scale:__ 
+    - An arbitrary parameter $\sigma$ is a scale parameter for the distribution of $X$ if, for all $a > 0$ and all real $b$, the corresponding parameter for the distribution of $aX + b$ is $a\sigma$.
+    - _Median Absolute Deviation_. The median absolute deviation of a random variable $X$ is the median of the distribution of $|X − m|,$ where $m$ is the median of $X$.
+
+
+- __M-Estimators of the Median:__ The M.L.E. of $\theta$ under the assumption that the data have p.d.f. $g_k(x | \theta, \sigma) = c_ke^{h_k(|x - \theta| / \sigma)}$  is called an M-estimator.
+
 
 ## Reference
 
