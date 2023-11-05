@@ -4,4 +4,5 @@ This repository contains all the note that I have taken while learning Machine L
 
 ## 0. Table of Contents
 
+- [0. Machine Learning Project Checklist](Machine-Learning-Project-Checklist/README.md)
 - [1. Probability and Statistics](Probability-and-Statistics/README.md)
