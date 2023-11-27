@@ -6,3 +6,4 @@ This repository contains all the note that I have taken while learning Machine L
 
 - [0. Machine Learning Project Checklist](Machine-Learning-Project-Checklist/README.md)
 - [1. Probability and Statistics](Probability-and-Statistics/README.md)
+- [2. Variational Autoencoders and Diffusion Models](VAE-Diffusion-Models/README.md)
