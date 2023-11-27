@@ -1,5 +1,8 @@
 # Topic 1: Probability and Statistics
 
+![](./topic1.jpg)
+
+
 ## 0. Table of Contents
 
 - [1. Univariate Models](#1-univariate-models)
