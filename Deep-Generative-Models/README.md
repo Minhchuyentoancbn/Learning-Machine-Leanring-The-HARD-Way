@@ -5,6 +5,7 @@
 ## 0. Table of Contents
 
 - [1. Variational Autoencoders](#1-variational-autoencoders)
+- [2. Diffusion Models](#2-diffusion-models)
 
 - [Reference](#reference)
 
@@ -19,6 +20,24 @@
 ![](./vae-vae.png)
 ![](./vae-hierarchical-vae.png)
 ![](./vae-challenges.png)
+
+- We say a posterior is collapsing, when signal from input $x$ to posterior parameters is either too weak or too noisy, and as a result, decoder starts ignoring $z$ samples drawn from the posterior $q_\phi(z|x)$.
+- In various domains, such as text and images, it has been empirically observed that it is difficult to make use of latent variables when coupled with a strong autoregressive decoder.
+
+
+## 2. Diffusion Models
+
+![](./dfm-denoising-diffusion-model.png)
+![](./dfm-forward-diffusion-process.png)
+
+- Usually $\beta$ is very small, E.g. 0.0001. Forward faster using diffusion kernel as each step uses a very simple Gaussian distribution: Proof using induction.
+
+![](./dfm-diffusion-kernel.png)
+![](./dfm-generative-learning-by-denoising.png)
+![](./dfm-reverse-denoising-process.png)
+![](./dfm-learning-denoising-model.png)
+![](./dfm-parameterizing-denoising-model.png)
+
 
 ## Reference
 
