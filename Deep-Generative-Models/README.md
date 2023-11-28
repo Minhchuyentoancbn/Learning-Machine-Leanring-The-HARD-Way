@@ -37,6 +37,31 @@
 ![](./dfm-reverse-denoising-process.png)
 ![](./dfm-learning-denoising-model.png)
 ![](./dfm-parameterizing-denoising-model.png)
+![](./dfm-training-objective-weighting.png)
+![](./dfm-summary.png)
+![](./dfm-implementation-architecture.png)
+![](./dfm-connection-to-vae.png)
+![](./dfm-continuous-time.png)
+![](./dfm-forward-diffusion-process-sde.png)
+![](./dfm-sde.png)
+![](./dfm-forward-diffusion-process-sde2.png)
+![](./dfm-generative-reverse-sde.png)
+
+- But how to get the score function?
+
+![](./dfm-score-matching.png)
+![](./dfm-denoising-score-matching2.png)
+![](./dfm-denoising-score-matching.png)
+
+- Why the distribution is tractable:
+
+![](./dfm-variance-preserving-sde.png)
+
+![](./dfm-denoising-score-matching3.png)
+![](./dfm-continuous-elbo.png)
+![](./dfm-weighted-diffusion-objective.png)
+![](./dfm-denoising-score-matching4.png)
+
 
 
 ## Reference
