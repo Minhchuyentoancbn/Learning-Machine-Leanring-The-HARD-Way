@@ -6,6 +6,7 @@
 
 - [1. Variational Autoencoders](#1-variational-autoencoders)
 - [2. Diffusion Models](#2-diffusion-models)
+    - [2.1. Case Study: Imagegen](#21-case-study-imagegen)
 
 - [Reference](#reference)
 
@@ -61,6 +62,25 @@
 ![](./dfm-continuous-elbo.png)
 ![](./dfm-weighted-diffusion-objective.png)
 ![](./dfm-denoising-score-matching4.png)
+![](./dfm-probability-flow-ode.png)
+![](./dfm-synthesis-sde-ode.png)
+![](./dfm-sampling-continuous-time1.png)
+![](./dfm-sampling-continuous-time2.png)
+![](./dfm-sampling-problem.png)
+![](./dfm-progressive-distillation.png)
+![](./dfm-progressive-distillation-algorithm.png)
+
+
+### 2.1. Case Study: Imagegen
+
+![](./dfm-imagegen1.png)
+![](./dfm-imagegen2.png)
+![](./dfm-imagegen3.png)
+![](./dfm-imagegen4.png)
+![](./dfm-imagegen5.png)
+
+- Large classifier-free guidance weights → better text alignment, worse image fidelity
+- Larger Text Encoders → Better Alignment, Better Fidelity
 
 
 
