@@ -1,6 +1,6 @@
 # Topic 1: Probability and Statistics
 
-![](./topic1.jpg)
+![](./image/topic1.jpg)
 
 
 ## 0. Table of Contents
@@ -37,50 +37,50 @@
 
 - Dirac delta function:
 
-![](./dirac%20delta%20function.png)
+![](./image/dirac%20delta%20function.png)
 
 ### 1.2. Student's t Distribution
 
 - Student's t distribution:
 
-![](./Student%20Distribution.png)
+![](./image/Student%20Distribution.png)
 
 - We see that the probability density decays as a polynomial function of the squared distance from the center, as opposed to an exponential function, so there is more probability mass in the tail than with a Gaussian distribution. We say that the Student distribution has heavy tails, which makes it robust to outliers. 
 
 ### 1.3. Cauchy distribution
 
-![](./Cauchy%20Distribution.png)
+![](./image/Cauchy%20Distribution.png)
 
 ### 1.4. Laplace distribution
 
-![](./Laplace%20Distribution.png)
+![](./image/Laplace%20Distribution.png)
 
 ### 1.5. Beta distribution
 
-![](./Beta%20Distribution.png)
+![](./image/Beta%20Distribution.png)
 
 ### 1.6. Gamma distribution
 
-![](./Gamma%20Distribution%201.png)
-![](./Gamma%20Distribution%202.png)
+![](./image/Gamma%20Distribution%201.png)
+![](./image/Gamma%20Distribution%202.png)
 
 ### 1.7. Transformation of Random Variables 
-![](./Transformation%20of%20RVs.png)
+![](./image/Transformation%20of%20RVs.png)
 
 ## 2. Multivariate Models
 
 ### 2.1. Joint distributions for multiple random variables 
-![](./Joint%20Distribution.png)
+![](./image/Joint%20Distribution.png)
 
 ### 2.2. The multivariate Gaussian (normal) distribution
 
-![](./MVN.png)
+![](./image/MVN.png)
 
 - Can be used for missing value imputation.
 
 ### 2.3. Linear Gaussian systems
 
-![](./Linear%20Gaussian.png)
+![](./image/Linear%20Gaussian.png)
 
 ### 2.4. Mixture of Models
 
@@ -89,39 +89,39 @@ components grow sufficiently large, a GMM can approximate any smooth distributio
 
 ## 3. Fisher Information
 
-![](./Fisher%20and%20Hessian.png)
+![](./image/Fisher%20and%20Hessian.png)
 
 
 ### 3.1. Definition and Properties
 
 - Definition:
 
-![](./Fisher%20Information%20Definition.png)
+![](./image/Fisher%20Information%20Definition.png)
 
 - Properties:
 
-![](./Fisher%20Information%20Property%201.png)
+![](./image/Fisher%20Information%20Property%201.png)
 
 - __The Fisher Information in a Random Sample:__ When we have a random sample from a distribution, the Fisher information is defined in an analogous manner.
 
-![](./Fisher%20of%20Random%20Sample.png)
+![](./image/Fisher%20of%20Random%20Sample.png)
 
 ### 3.2. The Information Inequality
 
 - Cramer-Rao (Information) Inequality
 
-![](./Crammer%20Rao%20Inequality.png)
+![](./image/Crammer%20Rao%20Inequality.png)
 
 - Cramer-Rao Lower Bound on the Variance of an Unbiased Estimator
 
-![](./Crammer%20Rao%20Inequality%20Unbiased.png)
+![](./image/Crammer%20Rao%20Inequality%20Unbiased.png)
 
 
 ### 3.3. Efficient Estimators
 
 - Definition:
 
-![](./Efficient%20Estimator%20Definition.png)
+![](./image/Efficient%20Estimator%20Definition.png)
 
 - In other words, if $T$ is an efficient estimator of $m(\theta)$, then among all unbiased estimators of $m(\theta)$, $T$ will have the smallest variance for every possible value of $\theta$.
 
@@ -129,11 +129,11 @@ components grow sufficiently large, a GMM can approximate any smooth distributio
 
 - Asymtotic Distribution of an Efficient Estimator:
 
-![](./MLE%20for%20large%20samples.png)
+![](./image/MLE%20for%20large%20samples.png)
 
 - Asymptotic Distribution of M.L.E
 
-![](./Asymtotic%20Distribution%20of%20MLE.png)
+![](./image/Asymtotic%20Distribution%20of%20MLE.png)
 
 - It is said that $\hat\theta_n$ is an asymptotically efficient estimator.
 
@@ -141,7 +141,7 @@ components grow sufficiently large, a GMM can approximate any smooth distributio
 
 - Fisher Information for a Vector Parameter:
 
-![](./Fisher%20Information%20for%20a%20vector%20parameter.png)
+![](./image/Fisher%20Information%20for%20a%20vector%20parameter.png)
 
 
 ## 4. Categorical Data and Nonparametric Methods
@@ -150,25 +150,25 @@ components grow sufficiently large, a GMM can approximate any smooth distributio
 
 - __The Chi-Squared Test of Goodness of Fit:__
 
-![](./Chi-Squared%20Test%20Assumptions%20.png)
+![](./image/Chi-Squared%20Test%20Assumptions%20.png)
 
 - For $i = 1,...,k,$ we shall let $N_i$ denote the number of observations in the random sample that are of type $i$.
 
 - Chi-Squared Statistic:
 
-![](./Chi-Squared%20Statistic.png)
+![](./image/Chi-Squared%20Statistic.png)
 
 - __Testing Hypotheses about a Continuous Distribution:__
 
-![](./Chi-Squared%20Test%20Continuous%20Variables.png)
+![](./image/Chi-Squared%20Test%20Continuous%20Variables.png)
 
 - __Composite Null Hypotheses:__
 
-![](./Goodness%20of%20Fit%20Composite%20Hypotheses.png)
+![](./image/Goodness%20of%20Fit%20Composite%20Hypotheses.png)
 
 - __The Chi-Squared Test for Composite Null Hypotheses:__
 
-![](./Chi-Squared%20Test%20Composite%20Hypotheses.png)
+![](./image/Chi-Squared%20Test%20Composite%20Hypotheses.png)
 
 - To determine the number of degrees of freedom, we must subtract $s$ from the number $k − 1$ because we are now estimating the $s$ parameters $\theta_1, \theta_2, ..., \theta_s$.
 
@@ -180,12 +180,12 @@ of $C$ different types. Thus, the data obtained from the R samples can be repres
 - For $i = 1,...,R,$ and $j = 1,...,C,$ we shall let $p_{ij}$ denote the
 probability that an observation chosen at random from the $i$ th population will be of type $j$.
 
-![](./Homogeneity%20Hypothesis.png)
-![](./Homogeneity%20Hypothesis%202.png)
+![](./image/Homogeneity%20Hypothesis.png)
+![](./image/Homogeneity%20Hypothesis%202.png)
 
 - __The Chi-Squared Test of Homogeneity:__
 
-![](./Chi-Square%20test%20of%20Homogeneity.png)
+![](./image/Chi-Square%20test%20of%20Homogeneity.png)
 
 - Statistic Q will have approximately the Chi-squared distribution with $(R − 1)(C − 1)$ degrees of freedom
 
@@ -198,11 +198,11 @@ probability that an observation chosen at random from the $i$ th population will
 
 - __Contaminated Normal Distributions:__
 
-![](./Contaminated%20Normal%20Distribution.png)
+![](./image/Contaminated%20Normal%20Distribution.png)
 
 - __Trimmed Means:__
 
-![](./Trimmed%20Mean.png)
+![](./image/Trimmed%20Mean.png)
 
 - __Robust Estimation of Scale:__ 
     - An arbitrary parameter $\sigma$ is a scale parameter for the distribution of $X$ if, for all $a > 0$ and all real $b$, the corresponding parameter for the distribution of $aX + b$ is $a\sigma$.
