@@ -8,3 +8,4 @@ This repository contains all the note that I have taken while learning Machine L
 - [1. Probability and Statistics](Probability-and-Statistics/README.md)
 - [2. Deep Generative Models](Deep-Generative-Models/README.md)
 - [3. Natural Language Processing with Deep Learning](NLP-with-Deep-Learning/README.md)
+- [4. Nonparametric Models](Nonparametric-Models/README.md)
