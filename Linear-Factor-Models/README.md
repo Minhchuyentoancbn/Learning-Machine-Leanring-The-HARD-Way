@@ -1,4 +1,4 @@
-# Topic 5: Linear Factor Models
+# Linear Factor Models
 
 ![](./image/topic5.png)
 

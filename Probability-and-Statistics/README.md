@@ -1,4 +1,4 @@
-# Topic 1: Probability and Statistics
+# Probability and Statistics
 
 ![](./image/topic1.jpg)
 

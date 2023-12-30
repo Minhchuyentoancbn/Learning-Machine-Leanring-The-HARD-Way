@@ -1,4 +1,4 @@
-# Topic 0: Machine Learning Project Checklist
+# Machine Learning Project Checklist
 
 ## Main Steps
 

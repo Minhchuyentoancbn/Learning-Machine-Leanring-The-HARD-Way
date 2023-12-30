@@ -1,4 +1,4 @@
-# Topic 2: Deep Generative Models
+# Deep Generative Models
 
 ![](./image/topic2.png)
 

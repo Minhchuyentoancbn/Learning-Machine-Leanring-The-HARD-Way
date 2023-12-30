@@ -1,4 +1,4 @@
-# Topic 3: Natural Language Processing with Deep Learning
+# Natural Language Processing with Deep Learning
 
 ![](./image/topic3.jpg)
 

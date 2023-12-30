@@ -1,4 +1,4 @@
-# Topic 4: Nonparametric Models
+# Nonparametric Models
 
 ![](./image/topic4.jpg)
 
